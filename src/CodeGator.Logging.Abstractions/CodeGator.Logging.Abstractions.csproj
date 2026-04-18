@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <InternalsVisibleTo Include="CodeGator.Logging.UnitTests" />
+    <InternalsVisibleTo Include="CodeGator.Logging.Abstractions.UnitTests" />
   </ItemGroup>
 
   <ItemGroup>
