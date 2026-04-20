@@ -1,4 +1,4 @@
-﻿
+
 namespace CodeGator.Logging.Attributes;
 
 /// <summary>
@@ -8,7 +8,7 @@ namespace CodeGator.Logging.Attributes;
 /// Apply this attribute to personally identifiable or otherwise sensitive members that may
 /// appear in logs only in a masked or truncated form, not as raw text.
 /// </remarks>
-[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
+[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter)]
 public class ObfuscateForLoggingAttribute : DataClassificationAttribute
 {
 

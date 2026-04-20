@@ -1,4 +1,4 @@
-﻿
+
 namespace CodeGator.Logging.Attributes;
 
 /// <summary>
@@ -8,7 +8,7 @@ namespace CodeGator.Logging.Attributes;
 /// Apply this attribute to members that must not appear in plain text in logs; compliant
 /// serializers should emit a stable hash representation instead of the raw value.
 /// </remarks>
-[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
+[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter)]
 public class HashForLoggingAttribute : DataClassificationAttribute
 {
 

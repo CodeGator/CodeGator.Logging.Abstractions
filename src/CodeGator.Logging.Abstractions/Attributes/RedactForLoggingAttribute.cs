@@ -1,4 +1,4 @@
-﻿
+
 namespace CodeGator.Logging.Attributes;
 
 /// <summary>
@@ -8,7 +8,7 @@ namespace CodeGator.Logging.Attributes;
 /// Apply this attribute to sensitive members that must not appear in logs at all; compliant
 /// serializers should remove or replace the value entirely when writing log entries.
 /// </remarks>
-[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
+[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter)]
 public class RedactForLoggingAttribute : DataClassificationAttribute
 {
 
