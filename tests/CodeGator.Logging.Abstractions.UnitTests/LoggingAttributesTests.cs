@@ -40,7 +40,7 @@ public sealed class LoggingAttributesTests
         {
             var usage = type.GetCustomAttribute<AttributeUsageAttribute>();
             Assert.IsNotNull(usage);
-            var expected = AttributeTargets.Field | AttributeTargets.Property;
+            var expected = AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Parameter;
             Assert.AreEqual(expected, usage!.ValidOn);
         }
     }
